@@ -38,11 +38,20 @@ y_window = 0.5 #to check whether an atoms lies within the +/- window of threshol
 x_shift = 10.13811 #the lattice parameter (BUT with sign) needed to repeat the atom on the other end of the unit cell.
 y_shift = -10.13811 #the lattice parameter (BUT with sign) needed to repeat the atom on the other end of the unit cell.
 
+#Reactant Geometry
 input_path= 'R_Garvit_LiEC_6L.xyz' #path
 output_path = 'Rcenter_Garvit_LiEC_6L.xyz' #path
-
 move_atoms_around(input_path,output_path,x_threshold,x_window,y_threshold,y_window,x_shift,y_shift)
-
 print(f"Moved atoms around in {input_path} to center EC. Output written to {output_path}.")
 
+#TS Geometry
+input_path= 'TS_Garvit_LiEC_6L.xyz' #path
+output_path = 'TScenter_Garvit_LiEC_6L.xyz' #path
+move_atoms_around(input_path,output_path,x_threshold,x_window,y_threshold,y_window,x_shift,y_shift)
+print(f"Moved atoms around in {input_path} to center EC. Output written to {output_path}.")
 
+#Isolated Li surface
+input_path= 'Lisurf_Garvit_6L.xyz' #path
+output_path = 'Lisurfcenter_Garvit_6L.xyz' #path
+move_atoms_around(input_path,output_path,x_threshold,x_window,y_threshold,y_window,x_shift,y_shift)
+print(f"Moved atoms around in {input_path} to center EC. Output written to {output_path}.")
