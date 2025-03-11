@@ -69,7 +69,7 @@ surface_adsorbate = read(surface_adsorbate_path)
 embed_superlattice = surface_adsorbate + supercell
 write(embed_superlattice_path,embed_superlattice)
 
-print(f"Embedded reactant superlattice written to {embed_superlattice_path}.")
+print(f"Embedded superlattice written to {embed_superlattice_path}.")
 
 
 #TS
@@ -80,7 +80,7 @@ surface_adsorbate = read(surface_adsorbate_path)
 embed_superlattice = surface_adsorbate + supercell
 write(embed_superlattice_path,embed_superlattice)
 
-print(f"Embedded reactant superlattice written to {embed_superlattice_path}.")
+print(f"Embedded superlattice written to {embed_superlattice_path}.")
 
 #Lisurf_embed
 surface_adsorbate_path = 'Lisurfcenter_Garvit_6L.xyz'
@@ -90,4 +90,4 @@ surface_adsorbate = read(surface_adsorbate_path)
 embed_superlattice = surface_adsorbate + supercell
 write(embed_superlattice_path,embed_superlattice)
 
-print(f"Embedded reactant superlattice written to {embed_superlattice_path}.")
+print(f"Embedded superlattice written to {embed_superlattice_path}.")
