@@ -28,9 +28,7 @@ def move_atoms_around(input_path,output_path,x_threshold,x_window,y_threshold,y_
     geometry.set_positions(positions)
     write(output_path,geometry)
 
-
 #Parameters
-
 x_threshold = 0. #the neighborhood of atoms to be moved along x
 x_window = 0.5 #to check whether an atoms lies within the +/- window of threshold along x
 y_threshold = 8.4 #the neighborhood of atoms to be moved along y
