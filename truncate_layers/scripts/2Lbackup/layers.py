@@ -65,104 +65,104 @@ lattice_constants = [
     [0.0, 0.0,8*a]   # c vector
 ]
 
-#---------------------------334------------------------#
+#---------------------------332------------------------#
 
 #Reactant
-z_threshold = 3.0
+z_threshold = 6.0
 per_path = 'Rcenter_Garvit_LiEC_6L.xyz'
 BCC_path = 'BCCcenter_6L.xyz'
 n = 2
 n_original = 2
-output_hollow = 'Lisurfcenter_334_hollow.xyz'
-output_embed = 'Rcenter_334_LiEC.xyz'
+output_hollow = 'Lisurfcenter_332_hollow.xyz'
+output_embed = 'Rcenter_332_LiEC.xyz'
 embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
 
 #TS
-z_threshold = 3.0
+z_threshold = 6.0
 per_path = 'TScenter_Garvit_LiEC_6L.xyz'
 BCC_path = 'BCCcenter_6L.xyz'
 n = 2
 n_original = 2
-output_hollow = 'Lisurfcenter_334_hollow.xyz'
-output_embed = 'TScenter_334_LiEC.xyz'
+output_hollow = 'Lisurfcenter_332_hollow.xyz'
+output_embed = 'TScenter_332_LiEC.xyz'
 embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
 
 #Only surface
-z_threshold = 3.0
+z_threshold = 6.0
 per_path = 'Lisurfcenter_Garvit_6L.xyz'
 BCC_path = 'BCCcenter_6L.xyz'
 n = 1
 n_original = 1
-output_hollow = 'Lisurfcenter_334_hollow.xyz'
-output_embed = 'LiECcenter_334.xyz'
+output_hollow = 'Lisurfcenter_332_hollow.xyz'
+output_embed = 'LiECcenter_332.xyz'
 
 #(super)lattice constants
 embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
 z_coords = [atom.position[2] for atom in embed]
 zmax = max(z_coords)
-print("DONE with 334")
+print("DONE with 332")
 print("Superlattice Vectors",(2*n+1)*a,(2*n+1)*a,zmax+vac)
 
 #---------------------------552------------------------#
 
 #Reactant
-z_threshold = 3.0
+z_threshold = 6.0
 per_path = 'Rcenter_Garvit_LiEC_6L.xyz'
 BCC_path = 'BCCcenter_6L.xyz'
 n = 2
 n_original = 1
-output_hollow = 'Lisurfcenter_554_hollow.xyz'
-output_embed = 'Rcenter_554_LiEC.xyz'
+output_hollow = 'Lisurfcenter_552_hollow.xyz'
+output_embed = 'Rcenter_552_LiEC.xyz'
 embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
 #TS
-z_threshold = 3.0
+z_threshold = 6.0
 per_path = 'TScenter_Garvit_LiEC_6L.xyz'
 BCC_path = 'BCCcenter_6L.xyz'
 n = 2
 n_original = 1
-output_hollow = 'Lisurfcenter_554_hollow.xyz'
-output_embed = 'TScenter_554_LiEC.xyz'
+output_hollow = 'Lisurfcenter_552_hollow.xyz'
+output_embed = 'TScenter_552_LiEC.xyz'
 embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
 #Only surface
-z_threshold = 3.0
+z_threshold = 6.0
 per_path = 'Lisurfcenter_Garvit_6L.xyz'
 BCC_path = 'BCCcenter_6L.xyz'
 n = 2
 n_original = 1
-output_hollow = 'Lisurfcenter_554_hollow.xyz'
-output_embed = 'LiECcenter_554.xyz'
+output_hollow = 'Lisurfcenter_552_hollow.xyz'
+output_embed = 'LiECcenter_552.xyz'
 embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
-print("DONE with 554")
+print("DONE with 552")
 print("Superlattice Vectors",(2*n+1)*a,(2*n+1)*a,zmax+vac)
 
-# #---------------------------772------------------------#
+#---------------------------772------------------------#
 
-# #Reactant
-# z_threshold = 6.0
-# per_path = 'Rcenter_Garvit_LiEC_6L.xyz'
-# BCC_path = 'BCCcenter_6L.xyz'
-# n = 3
-# n_original = 1
-# output_hollow = 'Lisurfcenter_772_hollow.xyz'
-# output_embed = 'Rcenter_772_LiEC.xyz'
-# embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
-# #TS
-# z_threshold = 6.0
-# per_path = 'TScenter_Garvit_LiEC_6L.xyz'
-# BCC_path = 'BCCcenter_6L.xyz'
-# n = 3
-# n_original = 1
-# output_hollow = 'Lisurfcenter_772_hollow.xyz'
-# output_embed = 'TScenter_772_LiEC.xyz'
-# embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
-# #Only surface
-# z_threshold = 6.0
-# per_path = 'Lisurfcenter_Garvit_6L.xyz'
-# BCC_path = 'BCCcenter_6L.xyz'
-# n = 3
-# n_original = 1
-# output_hollow = 'Lisurfcenter_772_hollow.xyz'
-# output_embed = 'LiECcenter_772.xyz'
-# embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
-# print("DONE with 772")
-# print("Superlattice Vectors",(2*n+1)*a,(2*n+1)*a,zmax+vac)
+#Reactant
+z_threshold = 6.0
+per_path = 'Rcenter_Garvit_LiEC_6L.xyz'
+BCC_path = 'BCCcenter_6L.xyz'
+n = 3
+n_original = 1
+output_hollow = 'Lisurfcenter_772_hollow.xyz'
+output_embed = 'Rcenter_772_LiEC.xyz'
+embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
+#TS
+z_threshold = 6.0
+per_path = 'TScenter_Garvit_LiEC_6L.xyz'
+BCC_path = 'BCCcenter_6L.xyz'
+n = 3
+n_original = 1
+output_hollow = 'Lisurfcenter_772_hollow.xyz'
+output_embed = 'TScenter_772_LiEC.xyz'
+embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
+#Only surface
+z_threshold = 6.0
+per_path = 'Lisurfcenter_Garvit_6L.xyz'
+BCC_path = 'BCCcenter_6L.xyz'
+n = 3
+n_original = 1
+output_hollow = 'Lisurfcenter_772_hollow.xyz'
+output_embed = 'LiECcenter_772.xyz'
+embed = create_layers(per_path,BCC_path,z_threshold,lattice_constants,output_hollow,output_embed,n,n_original)
+print("DONE with 772")
+print("Superlattice Vectors",(2*n+1)*a,(2*n+1)*a,zmax+vac)
