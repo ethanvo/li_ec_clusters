@@ -1,0 +1,17 @@
+-----------------------------------
+ s i m p l e   D F T - D 3  v1.0.0
+-----------------------------------
+
+Zero (Chai-Head-Gordon) damping: pbe-D3(0)-ATM
+--------------------
+  s6         1.0000
+  s8         0.7220
+  s9         1.0000
+ rs6         1.2170
+ rs8         1.0000
+ alp        14.0000
+--------------------
+
+Dispersion energy:      -2.6220940527672E-03 Eh
+
+[Info] Dispersion energy written to .EDISP
