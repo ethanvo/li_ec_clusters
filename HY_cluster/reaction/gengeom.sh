@@ -8,13 +8,13 @@ Arguments
 1. Rxyz
 2. TSxyz
 3. mol_idx
-4. center_idx
-5. Rout_path
-6. TSout_path
+4. rcenter_idx
+5. tscenter_idx
+6. Rout_path
+7. TSout_path
 '
-mol_idx="514,515,516,517,518,519,520,521,522,523"
-center_idx="287"
-rcut="1,2,3,4,5,6,7,8,9,10"
+mol_idx="54,55,56,57,58,59,50,51,52,53"
+center_idx="55,59"
 rxyz="./superlattice/Rcenter_embed_superlattice.xyz"
 tsxyz="./superlattice/TScenter_embed_superlattice.xyz"
 
