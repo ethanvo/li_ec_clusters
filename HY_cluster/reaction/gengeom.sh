@@ -13,7 +13,7 @@ Arguments
 6. Rout_path
 7. TSout_path
 '
-mol_idx="54,55,56,57,58,59,50,51,52,53"
+mol_idx="54,55,56,57,58,59,60,61,62,63"
 center_idx="55,59"
 rxyz="./superlattice/Rcenter_embed_superlattice.xyz"
 tsxyz="./superlattice/TScenter_embed_superlattice.xyz"
