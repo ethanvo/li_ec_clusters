@@ -38,7 +38,7 @@ if __name__ == '__main__':
     rsurf_rs = rrs[rsurf_atmidx].reshape(-1,3)
     tssurf_rs = tsrs[tssurf_atmidx].reshape(-1,3)
     
-    center_rs = np.concatenate((rrs[center_atmidx],tsrs[center_atmidx])).reshape(-1,3).mean(axis=0)
+    center_rs = np.concatenate((rrs[center_atmidx])).reshape(-1,3).mean(axis=0)
     print(center_rs)
     dist = np.linalg.norm(rsurf_rs - center_rs, axis=-1)
     order = np.argsort(dist)
