@@ -43,7 +43,7 @@ if __name__ == '__main__':
     dist = np.linalg.norm(rsurf_rs - center_rs, axis=-1)
     order = np.argsort(dist)
     print(order)
-    for nsurf in np.arange(2,121,2):
+    for nsurf in np.arange(2,488,2):
         keep_atmidx = rsurf_atmidx[order[:nsurf]].copy()
         keep_atmidx = keep_atmidx[np.argsort(rrs[keep_atmidx,2])]
         keep_atmidx = np.concatenate((keep_atmidx, mol_atmidx)).astype(int)
@@ -62,7 +62,7 @@ if __name__ == '__main__':
             f.write('\n')
             for atm, r in keep_atom:
                 f.write(f'{atm} {r[0]} {r[1]} {r[2]}\n')
-    for nsurf in np.arange(2,121,2):
+    for nsurf in np.arange(2,488,2):
         keep_atmidx = tssurf_atmidx[order[:nsurf]].copy()
         keep_atmidx = keep_atmidx[np.argsort(tsrs[keep_atmidx,2])]
         keep_atmidx = np.concatenate((keep_atmidx, mol_atmidx)).astype(int)
