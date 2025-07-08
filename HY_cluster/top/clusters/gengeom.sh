@@ -4,8 +4,8 @@
 exe="../carving.py"
 
 prefix="surf+mol"
-mol_idx="514,515,516,517,518,519,520,521,522,523"
-center_idx="287"
+mol_idx="54,55,56,57,58,59,60,61,62,63"
+center_idx="45"
 rcut="1,2,3,4,5,6,7,8,9,10"
 fxyz="../superlattice/${prefix}.xyz"
 

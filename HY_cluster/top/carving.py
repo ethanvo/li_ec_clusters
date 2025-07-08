@@ -33,7 +33,7 @@ if __name__ == '__main__':
     dist = np.linalg.norm(surf_rs - center_rs, axis=-1)
     order = np.argsort(dist)
     print(order)
-    for nsurf in np.arange(2,121,2):
+    for nsurf in np.arange(2,487,2):
         keep_atmidx = surf_atmidx[order[:nsurf]].copy()
         keep_atmidx = keep_atmidx[np.argsort(rs[keep_atmidx,2])]
         keep_atmidx = np.concatenate((keep_atmidx, mol_atmidx)).astype(int)

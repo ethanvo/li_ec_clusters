@@ -10,7 +10,7 @@ mkdir -p $out_path2
 
 rm -f err stdout
 
-for I in `seq 2 2 120`
+for I in `seq 2 2 486`
 do
 	fxyz="surf+mol/$I.xyz"
 	fout1="$out_path1/$I.xyz"	
