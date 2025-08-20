@@ -49,6 +49,13 @@ for ix in range(-n, n + 1):
         # Add the translated cell to the supercell
         supercell += translated_cell
 
+# Save transolated cell
+write("relaxed_superlattice.xyz", supercell)
+
+print(
+    f"Supercell repeated {2 * n + 1}x{2 * n + 1}x1 with updated cell dimensions. Output written to {surface_superlattice_path}."
+)
+
 # Update the supercell's lattice dimensions
 new_cell = cell.copy()
 new_cell[0] *= 2 * n + 1  # Scale x-direction
@@ -59,7 +66,7 @@ supercell.set_cell(new_cell, scale_atoms=False)
 write(surface_superlattice_path, supercell)
 
 print(
-    f"Supercell repeated {2*n+1}x{2*n+1}x1 with updated cell dimensions. Output written to {surface_superlattice_path}."
+    f"Supercell repeated {2 * n + 1}x{2 * n + 1}x1 with updated cell dimensions. Output written to {surface_superlattice_path}."
 )
 # Reactant
 surface_adsorbate_path = "top_ads_opt.xyz"
@@ -70,7 +77,7 @@ embed_superlattice = surface_adsorbate + supercell
 write(embed_superlattice_path, embed_superlattice)
 
 print(f"Embedded superlattice written to {embed_superlattice_path}.")
-'''
+"""
 # Reactant
 surface_adsorbate_path = "Rcenter_Garvit_LiEC_6L.xyz"
 embed_superlattice_path = "Rcenter_embed_superlattice.xyz"
@@ -101,4 +108,4 @@ embed_superlattice = surface_adsorbate + supercell
 write(embed_superlattice_path, embed_superlattice)
 
 print(f"Embedded superlattice written to {embed_superlattice_path}.")
-'''
+"""
